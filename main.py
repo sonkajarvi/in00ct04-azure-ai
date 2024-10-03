@@ -16,7 +16,7 @@ try:
     result = client.tag_image(sys.argv[1])
 except:
     print("An error occurred")
-    exit()
+    exit(1)
 
 print("Tags in image: ")
 if (len(result.tags) == 0):
